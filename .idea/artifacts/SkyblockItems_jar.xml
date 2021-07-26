@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SkyblockItems:jar">
+    <output-path>$PROJECT_DIR$/../Server2ElectricBoogaloo/plugins</output-path>
+    <root id="archive" name="SkyblockItems.jar">
+      <element id="module-output" name="SkyblockItems" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Dependencies/spigot-1.17.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

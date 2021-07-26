@@ -1,0 +1,11 @@
+name: SkyblockItems
+version: 0.0.0
+authors:
+  - DefiantBurger
+  - Cact1cus
+main: com.defiantburger.skyblockitems.Skyblock
+api-version: 1.17
+commands:
+  sbigive:
+    description: Gives a skyblock item.
+    usage: /<command> <skyblock_id>
