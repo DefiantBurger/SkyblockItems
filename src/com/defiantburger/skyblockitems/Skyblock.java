@@ -1,7 +1,6 @@
 package com.defiantburger.skyblockitems;
 
 import com.defiantburger.skyblockitems.SkyblockItems.Items;
-import com.defiantburger.skyblockitems.SkyblockItems.Utility.ItemAbilities;
 import com.defiantburger.skyblockitems.SkyblockItemsCommands.SBIGive;
 import com.defiantburger.skyblockitems.SkyblockItemsCommands.SBIGiveTabCompleter;
 import com.defiantburger.skyblockitems.SkyblockItemsEvents.Events;
@@ -20,7 +19,6 @@ public class Skyblock extends JavaPlugin {
         getCommand("sbigive").setExecutor(new SBIGive());
         getCommand("sbigive").setTabCompleter(new SBIGiveTabCompleter());
 
-        ItemAbilities.initialize();
         Items.initialize();
 
         System.out.println(ChatColor.GREEN + "[SkyblockItems] Plugin enabled!");

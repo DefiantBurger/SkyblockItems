@@ -48,7 +48,7 @@ public class MetaBuilder {
         for (ItemAbility ia : item.getAbilities()) {
             lore.add(ChatColor.GOLD + "Ability: " + ia.getName() + " " + ChatColor.YELLOW + ChatColor.BOLD + ia.getActivator());
             for (String s : ia.getDescription()) {
-                lore.add(s);
+                lore.add(ChatColor.GRAY + s);
             }
             lore.add("");
         }

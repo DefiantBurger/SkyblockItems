@@ -1,4 +1,4 @@
-package com.defiantburger.skyblockitems.SkyblockItems.Utility.TESTING;
+package com.defiantburger.skyblockitems.SkyblockItems.Utility.ItemAbilitiesClasses;
 
 import com.defiantburger.skyblockitems.SkyblockItems.Utility.ItemAbility;
 import org.bukkit.Location;
@@ -10,13 +10,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class InstantTransmission extends ItemAbility {
+public class InstantTransmission1 extends ItemAbility {
 
-    private int blocks;
-
-    public InstantTransmission(String name, List<String> description, String activator, String id, int blocks) {
-        super(name, description, activator, id);
-        this.blocks = blocks;
+    public InstantTransmission1(String name, List<String> description, String activator, List<String> activator_ids, String id) {
+        super(name, description, activator, activator_ids, id);
     }
 
     @Override
@@ -29,7 +26,7 @@ public class InstantTransmission extends ItemAbility {
         transparent.add(Material.VOID_AIR);
         transparent.add(Material.CAVE_AIR);
         try {
-            b = player.getTargetBlock(transparent, blocks);
+            b = player.getTargetBlock(transparent, 1);
         } catch (Exception ignored) {}
 
         Location loc = new Location(b.getWorld(), b.getX()+0.5, b.getY()+0.5, b.getZ()+0.5, player.getLocation().getYaw(), player.getLocation().getPitch());

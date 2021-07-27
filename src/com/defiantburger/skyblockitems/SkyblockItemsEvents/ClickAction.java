@@ -19,7 +19,9 @@ public class ClickAction {
         this.skyblockID = item.getId();
 
         for (ItemAbility ability : item.getAbilities()) {
-            ability.activate(player);
+            if (ability.getActivator_ids().contains(event.getAction().name())) {
+                ability.activate(player);
+            }
         }
     }
 
