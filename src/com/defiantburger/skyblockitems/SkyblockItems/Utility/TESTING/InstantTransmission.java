@@ -14,10 +14,12 @@ public class InstantTransmission extends ItemAbility {
 
     private int blocks;
 
-    public InstantTransmission(String name, List<String> description, String activator, String id) {
+    public InstantTransmission(String name, List<String> description, String activator, String id, int blocks) {
         super(name, description, activator, id);
+        this.blocks = blocks;
     }
 
+    @Override
     public void activate(Player player) {
         Block b = player.getLocation().getBlock();
 

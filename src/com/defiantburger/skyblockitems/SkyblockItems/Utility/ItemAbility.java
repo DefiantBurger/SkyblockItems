@@ -1,8 +1,10 @@
 package com.defiantburger.skyblockitems.SkyblockItems.Utility;
 
+import org.bukkit.entity.Player;
+
 import java.util.List;
 
-public class ItemAbility {
+public abstract class ItemAbility {
 
     private String name;
     private List<String> description;
@@ -16,7 +18,7 @@ public class ItemAbility {
         this.id = id;
     }
 
-    public void activate() { }
+    public abstract void activate(Player player);
 
     public String getName() {
         return name;
